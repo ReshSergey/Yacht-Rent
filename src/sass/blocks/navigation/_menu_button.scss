@@ -1,0 +1,16 @@
+.nav__menu-button {
+    width: 70px;
+    height: 29px;
+    border-radius: 4.671px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+    &__title {
+        text-align: center;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        color: #FFD289; 
+        // display: none;
+    } 
+}

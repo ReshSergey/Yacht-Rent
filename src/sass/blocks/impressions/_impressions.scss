@@ -1,0 +1,92 @@
+.impressions {
+    min-height: 1250px;
+    // width: 100%;
+    background-color: $bg-color;
+    position: relative;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include starfish;
+    @include photo-wedding;
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        top:0;
+        left:0;
+        background: url('../img/impressions/impressions_bg-wave.png') no-repeat bottom center/100% 193px,
+                    url('../img/impressions/impressions_bg.jpg') no-repeat center center/cover;
+        width: 100%;
+        min-height: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        @include conch;
+        @include dolphin;
+    }
+    &__title {
+        width: 417px; 
+        text-align: center;
+        font-size: 60px;
+        font-family: 'SignPainter';
+        font-style: normal;
+        font-weight: 400;
+        color: #fff;
+        line-height: 50px;
+        margin-top: 95px;
+    }
+    &__descr {
+        margin-top: 32px;
+        color: #FFF;
+        width: 591px;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__wrapper {
+        min-height: 194px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 44px;
+        margin-top: 66px; 
+    }
+    &__info {
+        height: 100%;
+        width: 204px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        &-descr {
+            color: #FFF;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 18px;
+        }
+    }
+    &__icons {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    &__photo {
+        width: 502px;
+        height: 390px;
+        position: relative;
+        z-index: -1;
+        margin-top: 90px;
+        transform: rotate(3deg);
+        background: url('../img/impressions/impressions_photo.jpg') no-repeat center center/cover;
+    }
+}

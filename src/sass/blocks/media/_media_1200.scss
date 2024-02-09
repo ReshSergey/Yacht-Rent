@@ -1,0 +1,99 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .nav {
+        padding: 20px 55px 16px 50px;
+        &__logo {
+            width: 200px;
+        }
+        &__items {
+            font-size: 12px;
+        }
+        &__social {
+            height: 24px;
+        }
+    }
+
+    .order {
+        &__wrapper {
+            margin: 30px 15px;
+            row-gap: 35px;
+            column-gap: 150px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            &-button {
+                margin-top: 20px;
+            }
+        }
+        &__card {
+            min-width: 147px;
+            height: 209px;
+        }
+    }
+
+    .additional {
+        padding-bottom: 50px;
+        &__card {
+            width: 327px;
+            height: 336px; 
+            border-radius: 8px; 
+            &-title {
+                font-size: 16px;
+                margin-top: 12px;
+                padding-left: 18px;
+                line-height: 18px;
+            }
+            &-descr {
+                padding-left: 18px;
+                margin-top: 9px;
+                font-size: 11px;
+                line-height: 12px;
+            }
+            &-price {
+                font-size: 11px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .impressions {
+        &:before {
+            // width: 173px;
+            // height: 160px;  
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+        &__bg {
+            &:before {
+                // width: 127px;
+                // height: 124px; 
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__photo {
+            margin-top: 20px;
+            margin-bottom: 180px;
+            width: 281px;
+            height: 218px; 
+        }
+    }
+    .popular_route {
+        align-items: center;
+        justify-content: center;
+        &__wrapper {
+            gap: 20px;      
+        }
+    }
+    .footer {
+        padding: 0 20px;
+    }
+}

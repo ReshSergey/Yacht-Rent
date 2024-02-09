@@ -1,0 +1,38 @@
+.header {
+    // width: 100%;
+    min-height: 838px;
+    background: url("../img/header/header_bg-wave.png") no-repeat bottom center/100% 193px, url("../img/header/header_bg.jpg") no-repeat center center/cover;
+    overflow: auto;
+    &_night {
+    background: url("../img/header/header_bg-wave.png") no-repeat bottom center/100% 193px, url("../img/header/header_bg_night.jpg") no-repeat bottom center/cover;
+
+    }
+    &__title {
+        margin-top: 106px;
+        width: 720px;
+        height: 141px; 
+        color: #FFF;
+        font-family: Graphik LCG;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 80px;
+    }
+    &__descr {
+        width: 449px; 
+        color: $text-white-color;
+        font-family: 'Graphik LCG';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        margin-top: 59px;
+    }
+    &__button-wrapper {
+        margin-top: 61px;
+        width: 260px; 
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}

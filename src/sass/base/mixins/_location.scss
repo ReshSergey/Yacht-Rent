@@ -1,0 +1,12 @@
+@mixin location {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 30px; 
+        top: 50%;
+        transform: translateX(-150%) translateY(-50%);
+        background: url('../icons/location/location-pin.svg') no-repeat center center/cover;
+    }
+
+}

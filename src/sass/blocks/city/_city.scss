@@ -1,0 +1,57 @@
+.city {
+    background-color: $bg-color;
+    padding-top: 15px;
+    &__title {
+        color: $title-color;
+        font-family: Graphik LCG;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 50px;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card {
+        width: 620px;
+        height: 288px;
+        border-radius: 10px;
+    }
+    &__crimea {
+        // width: 620px;
+        // height: 288px;
+        // border-radius: 10px; 
+        background: url("../img/city/crimea.png") no-repeat center center/cover;
+    }
+    &__sochi {
+        // width: 620px;
+        // height: 288px;
+        // border-radius: 10px; 
+        background: url("../img/city/sochi.png") no-repeat center center/cover;
+    }
+    &__name {
+        position: relative;
+        color: #FFF;
+        font-family: 'Graphik LCG';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 80px;
+        @include location;
+        &_right {
+            margin-top: 65px;
+            margin-right: 40px;
+            text-align: right;
+        }
+        &_left {
+            margin-top: 65px;
+            margin-left: 75px;
+            text-align: left;
+        }
+    }
+
+}

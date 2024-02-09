@@ -1,0 +1,50 @@
+.faq {
+    background-color: $bg-color;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    padding: 0 80px 50px 80px;
+    &__title {
+        margin-top: 50px;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 64px;
+        color: $title-color;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+        align-items:center;
+        justify-content: center;
+    }
+    &__card {
+        width: 635px;
+        min-height: 200px; 
+        background-color: #fff;
+        padding: 30px;
+        position: relative;
+        @include plus;
+        &-title {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        &-descr {
+            color: #272A35;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            opacity: 0.4; 
+            margin-top: 22px;
+            line-height: 17px;
+        }
+    }
+}

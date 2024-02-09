@@ -1,0 +1,11 @@
+@mixin plus {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 26px;  
+        top: 30px;
+        right: 35px;
+        background: url('../icons/faq/plus.svg') no-repeat center center/cover;
+    }
+}

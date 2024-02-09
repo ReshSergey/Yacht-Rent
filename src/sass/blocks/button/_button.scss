@@ -1,0 +1,39 @@
+.button {
+    width: 180px;
+    height: 48px; 
+    border-radius: 6px;
+    color: #000;
+    text-align: center;
+    font-family: 'Graphik LCG';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    &_color {
+        background: $button-gradient-color;
+        border: none;
+    } 
+    &_white {
+        border-radius: 10px;
+        border: 2px solid $button-color;
+        background: #FFF;
+    }
+    &__large {
+        width: 260px;
+        height: 56px; 
+        border-radius: 10px; 
+        border: none;
+        font-size: 17px; 
+        &-color {
+            border-radius: 10px;
+            background: $button-gradient-color;
+        }
+        &-white {
+            background:  $button-white;            
+        }
+    }
+    &__modal {
+        width: 480px;   
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin clock {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px; 
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../icons/popular_route/clock.svg') no-repeat center center/cover;
+    }
+}
+
+@mixin mountains {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px; 
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../icons/popular_route/mountains.svg') no-repeat center center/cover;
+    }
+}

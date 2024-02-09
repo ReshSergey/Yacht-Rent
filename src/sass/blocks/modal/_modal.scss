@@ -1,0 +1,154 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    background-color: rgba(0,0,0,.7);
+    &__dialog {
+        position: relative;
+        width: 580px;
+        height: 570px;    
+        background: $bg-color;
+        border-radius: 10px;
+        left: 430px;
+        top: 110px;
+        z-index: 1000;
+        padding: 40px 50px;
+    }
+    &__close {
+        cursor: pointer;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 0px;
+            top: 40px;
+            right: 30px;
+            border: 2px solid #205694;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+    &__title {
+        font-family: 'Graphik LCG';
+        font-size: 32px;
+        line-height: 32px;  
+        font-style: normal;
+        font-weight: 500;
+        color: $title-color;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__form {
+        margin-top: 40px;
+        select {
+            width: 480px;
+            height: 56px;
+            padding: 20px 25px 20px 25px;
+            font-size: 18px;
+            background: #FFFFFF;
+            border: 1px solid #D4E3EC;
+            background: url('../icons/modal/triangle.svg') no-repeat 95% 50%;
+            background-color: #fff;
+            border-radius: 6px;
+            appearance: none;
+            margin-bottom: 10px;
+            font-family: 'Graphik LCG';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            cursor: pointer;
+            option {
+                background: #FFFFFF;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 234px);
+            grid-template-rows: 56px 1fr 1fr 56px;
+            grid-auto-rows: auto;
+            column-gap: 10px;
+            row-gap: 16px;
+            &__cook {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &__jetski {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+
+    }
+    &__input {
+        width: 100%;
+        height: 56px;
+        padding: 20px 25px 20px 25px;
+        font-size: 18px;
+        background-color: #fff;
+        border: 1px solid #D4E3EC;
+        border-radius: 6px;
+        cursor: pointer;
+        &-date {
+            background: url('../icons/modal/calendar.svg') no-repeat 95% 50%;
+            background-color: #fff;
+            background-size: 20px 20px;
+
+        }
+    }
+
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    +label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        color: inherit;
+        cursor: pointer;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #D4E3EC;
+            border-radius: 0.25em;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+    }
+    &:checked + label::before {
+        border-color: $button-color;
+        background: url("../icons/modal/check.svg") no-repeat;
+        background-color: $button-color;
+      }
+}
+
+
+input[type = "date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    display: block;
+    background: url("../icons/modal/calendar.svg") no-repeat 95% 50%;
+    width: 20 px;
+    height: 20 px;
+    border-width: thin;
+  }

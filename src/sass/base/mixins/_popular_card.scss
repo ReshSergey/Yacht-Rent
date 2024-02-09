@@ -1,0 +1,47 @@
+@mixin yacht_location {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 22px; 
+        left: -22px;
+        top: 0;
+        background: url('../icons/popular_card/location.svg') no-repeat center center/cover;
+    }
+}
+
+@mixin capacity {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 18px;  
+        left: -22px;
+        top: 0;
+        background: url('../icons/popular_card/groups.svg') no-repeat center center/cover;
+    }
+}
+
+@mixin length {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 18px;  
+        left: -25px;
+        top: -3px;
+        background: url('../icons/popular_card/yacht.svg') no-repeat center center/cover;
+    }
+}
+
+@mixin star {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 20px;  
+        left: -25px;
+        top: -3px;
+        background: url('../icons/popular_card/star.svg') no-repeat center center/cover;
+    }
+}
