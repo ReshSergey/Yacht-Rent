@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function setHeaderBg(h) {
         if(h < 8 || h > 21) {
             header.classList.add('header_night');
-            }
+        }
     }
     
     setHeaderBg(hours);

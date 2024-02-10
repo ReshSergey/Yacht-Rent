@@ -12,6 +12,18 @@
     &_color {
         background: $button-gradient-color;
         border: none;
+    }
+    &_small {
+        width: 105px;
+        line-height: 16px;
+    }
+    &_inactive {
+        background: transparent;
+        color: rgb(255, 255, 255);
+        opacity: 0.4;
+        border: 2px solid;
+        border-color: rgba(255, 255, 255, 0.4);
+
     } 
     &_white {
         border-radius: 10px;
