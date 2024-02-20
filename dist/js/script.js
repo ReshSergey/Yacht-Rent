@@ -3,7 +3,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     //HEADER
-    //смена bg img в зависимости от времени
+    //смена background img в зависимости от времени
     const header = document.querySelector('.header'),
           date = new Date(),
           hours = date.getHours();

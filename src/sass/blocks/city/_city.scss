@@ -22,16 +22,10 @@
         border-radius: 10px;
     }
     &__crimea {
-        // width: 620px;
-        // height: 288px;
-        // border-radius: 10px; 
         background: url("../img/city/crimea.png") no-repeat center center/cover;
     }
     &__sochi {
-        // width: 620px;
-        // height: 288px;
-        // border-radius: 10px; 
-        background: url("../img/city/sochi.png") no-repeat center center/cover;
+        background: url("../img/city/sochi.png") no-repeat bottom center/97%;
     }
     &__name {
         position: relative;
