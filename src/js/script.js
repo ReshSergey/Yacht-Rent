@@ -52,4 +52,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
     showModal();
 
+
+    //direction data-link="cremea" data-link="sochi"
+
+    const city = document.querySelectorAll('.direction__city'),
+          port = document.querySelectorAll('.direction__select__port__container');
+
+    city.forEach(item => {
+        item.classList.toggle = port.forEach(item => {
+            item.classList.toggle = 'unvisible'
+        })
+    });
+
 });
