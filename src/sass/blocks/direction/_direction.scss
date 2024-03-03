@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: space-between;
         padding-left: 80px;
-        padding-right: 342px;
+        padding-right: 60px;
         &__title {
             font-weight: 600;
             font-size: 24px;
@@ -21,10 +21,12 @@
             color: #fff;
         }
         &__city {
+            width: 342px;
             font-weight: 500;
             font-size: 60px;
             line-height: 133%;
             color: #fff;
+            border-bottom: 4px solid #3e5e82;
         }
     }
     &__type {
