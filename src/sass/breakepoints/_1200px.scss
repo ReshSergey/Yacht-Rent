@@ -36,6 +36,27 @@
         }
     }
 
+    .impressions {
+        &__div {
+            &::after {
+                display: none;
+            }
+            &::before {
+                display: none;
+            }
+        }
+        &__photo {
+            &::before {
+                display: none;
+
+            }
+            &::after {
+                display: none;
+
+            }
+        }
+    }
+
     .popular_route {
         &__title {
             text-align: center;

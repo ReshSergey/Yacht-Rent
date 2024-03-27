@@ -4,13 +4,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include starfish;
-    @include photo-wedding;
     background: url('../img/impressions/impressions_bg-wave.png') no-repeat bottom center/100% 193px,
                 url('../img/impressions/impressions_bg.jpg') no-repeat center center/cover;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding-bottom: 58px;
+    &__div {
+        width: 0;
+        height: 0;
+        background-color: transparent;
+        position: relative;
+        @include photo-wedding;
+        @include starfish;
+    }
     &__title {
         max-width: 417px; 
         text-align: center;
@@ -78,5 +84,7 @@
         }
         @include conch;
         @include dolphin;
+        // @include starfish;
+        // @include photo-wedding;
     }
 }
