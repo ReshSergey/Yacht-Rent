@@ -3,10 +3,11 @@
     min-height: 160px;
     background-color: $footer-bg-color;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 0 80px;
+    gap: 20px;
+    padding: 40px 80px;
     &__address {
         width: 260px;
         min-height: 16px; 
@@ -44,5 +45,11 @@
                 text-decoration: none;
             }
         }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
     }
 }

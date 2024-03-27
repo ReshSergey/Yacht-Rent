@@ -1,30 +1,18 @@
 .impressions {
     min-height: 1250px;
-    // width: 100%;
     background-color: $bg-color;
-    position: relative;
-    z-index: -10;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include starfish;
     @include photo-wedding;
-    &__bg {
-        position: absolute;
-        z-index: -1;
-        top:0;
-        left:0;
-        background: url('../img/impressions/impressions_bg-wave.png') no-repeat bottom center/100% 193px,
-                    url('../img/impressions/impressions_bg.jpg') no-repeat center center/cover;
-        width: 100%;
-        min-height: 100%;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        @include conch;
-        @include dolphin;
-    }
+    background: url('../img/impressions/impressions_bg-wave.png') no-repeat bottom center/100% 193px,
+                url('../img/impressions/impressions_bg.jpg') no-repeat center center/cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 58px;
     &__title {
-        width: 417px; 
+        max-width: 417px; 
         text-align: center;
         font-size: 60px;
         font-family: 'SignPainter';
@@ -37,7 +25,7 @@
     &__descr {
         margin-top: 32px;
         color: #FFF;
-        width: 591px;
+        max-width: 591px;
         text-align: center;
         font-size: 18px;
         font-style: normal;
@@ -48,15 +36,15 @@
         min-height: 194px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
         column-gap: 44px;
+        row-gap: 24px;
         margin-top: 66px; 
     }
     &__info {
         height: 100%;
         width: 204px;
-        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -72,8 +60,8 @@
         }
     }
     &__icons {
-        width: 80px;
-        height: 80px;
+        min-width: 80px;
+        min-height: 80px;
         border-radius: 100%;
         background-color: #fff;
         display: flex;
@@ -81,12 +69,14 @@
         justify-content: center;
     }
     &__photo {
-        width: 502px;
-        height: 390px;
-        position: relative;
-        z-index: -1;
+        max-width: 502px;
+        // height: 390px;
         margin-top: 90px;
         transform: rotate(3deg);
-        background: url('../img/impressions/impressions_photo.jpg') no-repeat center center/cover;
+        img {
+            width: 100%;
+        }
+        @include conch;
+        @include dolphin;
     }
 }

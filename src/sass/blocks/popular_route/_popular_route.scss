@@ -4,25 +4,23 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow: auto;
+    padding-top: 82px;
+    padding-bottom: 100px;
     &__title {
         font-size: 32px;
         font-style: normal;
         font-weight: 500;
         line-height: 64px;
         color: $title-color;
-        margin-left: 80px;
+        // margin-left: 80px;
+        margin-bottom: 20px;
     }
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        margin-left: 80px;
-        margin-right: 80px;
-        margin-top: 20px;
-        margin-bottom: 50px;
-        gap: 20px;
+        gap: 10px;
     }
     &__card {
         width: 420px;
@@ -74,7 +72,7 @@
         }
         &-entertainment {
             position: relative;
-            width: 260px; 
+            max-width: 260px; 
             margin-top: 11px;
             margin-bottom: 17px;
             color: #000;

@@ -1,21 +1,25 @@
 .additional {
     // max-width: 100%;
+    width: 100%;
     min-height: 700px;
     background-color: $bg-color;
-    position: relative;
-    z-index: -10;
+    // padding-left: 24px;
+    // padding-right: 24px;
+    padding-right: 80px;
+    padding-left: 80px;
     &__title {
         font-size: 32px;
         font-style: normal;
         font-weight: 500;
         line-height: 64px;
         color: $title-color;
-        margin-left: 80px;
+        // margin-left: 80px;
     }
     &__wrapper {
+        max-width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 10px;
         margin-top: 10px;
@@ -24,7 +28,6 @@
         width: 420px;
         height: 433px; 
         border-radius: 10px; 
-        // margin-top: 15px;
         background-color: $cards-bg-color;
         img {
             width: 100%;

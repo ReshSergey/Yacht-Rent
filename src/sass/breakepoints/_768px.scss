@@ -1,0 +1,89 @@
+@media (max-width: 767.98px) {
+    .nav {
+        padding: 16px 86px 13px 15px;
+        column-gap: 0px;
+        // &__logo {
+        //     width: 127px;
+        //     height: 21px;
+        // }
+        &__list {
+            display: none; 
+           }
+        &__social {
+            display: none;
+        }
+        &__menu-button {
+            display: flex;
+        }
+    }
+
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+        &__title {
+            font-size: 48px;
+            line-height: 100%;
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
+
+    .city {
+        &__card {
+            width: 327px;
+            height: 160px;
+        }
+    }
+
+    .impressions {
+        &__title {
+            font-size: 44px;
+            line-height: 89%;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 125%;
+        }
+        &::before, &::after {
+            display: none;
+        }
+        &__info {
+            width: 112px;
+        }
+        &__photo {
+            margin-top: 40px;
+            max-width: 281px;
+            max-height: 218px;
+            transform: rotate(-6deg);
+            &::before {
+                width: 127px;
+                height: 124px;
+                top: -80px;
+                left: -20px;
+            }
+            &::after {
+                width: 127px;
+                height: 124px;
+                top: 70%;
+                right: -20px;
+            }
+        }
+    }
+
+    .popular_route {
+        &__wrapper {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        &__card {
+            width: 100%;
+        }
+    }
+    
+    .faq {
+        &__title {
+            line-height: 100%;
+        }
+    }
+}

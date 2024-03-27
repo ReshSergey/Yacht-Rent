@@ -2,6 +2,16 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
+    //Navigation Menu Button
+
+    const menuBtn = document.querySelector('.nav__menu-button'),
+          menuList = document.querySelector('.nav__list'),
+          menuSocial = document.querySelector('.nav__social');
+    
+    menuBtn.addEventListener('click', ()=> {
+
+    })
+
     //HEADER
     //смена background img в зависимости от времени
     const header = document.querySelector('.header'),
@@ -15,7 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
     
     setHeaderBg(hours);
 
-    //MODAL
+    
+
+    // //MODAL
     const buttonsBooking = document.querySelectorAll('button[data-book]'),
           modal = document.querySelector('.modal'),
           modalClose = document.querySelector('[data-close]');

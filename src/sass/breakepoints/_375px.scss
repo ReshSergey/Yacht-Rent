@@ -1,0 +1,48 @@
+@media (max-width: 375.98px) {
+    .nav {
+        flex-direction: column;
+        row-gap: 10px;
+        &__logo {
+            width: 127px;
+            height: 21px;
+        }
+        &__phone {
+            font-size: 11px;
+        }
+    }
+
+    .header {
+        &__inner {
+            padding-top: 54px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 125%;
+            margin-top: 30px;
+        }
+        &__button-wrapper {
+            margin-top: 30px;
+        }
+    }
+    .impressions {
+        &__photo {
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+    .faq {
+        &__card {
+            text-align: center;
+            &::before {
+                right: 15px;
+            }
+        }
+    }
+}

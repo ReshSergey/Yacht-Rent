@@ -45,7 +45,8 @@
         }
     }
     &__modal {
-        width: 480px;   
+        width: 100%;
+        max-width: 480px;   
         margin-top: 20px;
     }
 }

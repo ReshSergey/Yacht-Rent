@@ -1,0 +1,68 @@
+@media (max-width: 1200px) {
+    .header {
+        &__inner {
+            align-items: center;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .city {
+        &__title {
+            text-align: center;
+        }
+        &__inner {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    
+    .popular {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .order{
+        &__wrapper{
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+
+    .additional {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .popular_route {
+        &__title {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+
+    .footer {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        &__logo {
+            order: 1;
+        }
+        &__address {
+            order: 2;
+        }
+        &__info {
+            order: 5;
+        }
+        &__phone {
+            order: 3;
+        }
+        &__social {
+            order: 4;
+        }
+    }
+}

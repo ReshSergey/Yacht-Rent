@@ -11,6 +11,7 @@
 @import 'base/mixins/faq_plus';
 
 
+//Blocks
 @import 'blocks/container/container';
 @import 'blocks/navigation/nav';
 @import 'blocks/header/header';
@@ -29,10 +30,9 @@
 @import 'blocks/divider/divider';
 @import 'blocks/direction/direction';
 
-// @media
 
-@import 'blocks/media/media_1440';
-@import 'blocks/media/media_1200';
-@import 'blocks/media/media_992';
-@import 'blocks/media/media_768';
-@import 'blocks/media/media_576';
+// @media breakepoints
+@import "./breakepoints/1200px";
+@import "./breakepoints/768px";
+@import "./breakepoints/576px";
+@import "./breakepoints/_375px";

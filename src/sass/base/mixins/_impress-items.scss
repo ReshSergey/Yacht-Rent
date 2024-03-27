@@ -32,8 +32,8 @@
         position: absolute;
         width: 218px;
         height: 213px; 
-        left: 90px;
-        bottom: 330px;
+        left: -50%;
+        top: 0;
         background: url('../img/impressions/conch.png') no-repeat center center/cover;
         z-index: 20;
     }
@@ -46,8 +46,8 @@
         width: 286px;
         height: 172px;
         transform: rotate(-7.742deg); 
-        right: 60px;
-        bottom: 330px;
+        right: -50%;
+        top: 0;
         background: url('../img/impressions/dolphin.png') no-repeat center center/cover;
         z-index: 20;
     }

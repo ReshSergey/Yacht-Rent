@@ -14,6 +14,7 @@
         font-weight: 500;
         line-height: 64px;
         color: $title-color;
+        text-align: center;
     }
     &__wrapper {
         display: flex;
@@ -24,7 +25,7 @@
         justify-content: center;
     }
     &__card {
-        width: 635px;
+        max-width: 635px;
         min-height: 200px; 
         background-color: #fff;
         padding: 30px;
