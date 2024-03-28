@@ -1,34 +1,35 @@
-@import 'libs/bootstrap-reboot.min';
+@import './libs/bootstrap-reboot.min';
 
-@import 'base/fonts/fonts';
-@import 'base/variables/options';
-@import 'base/variables/colors';
-@import 'base/mixins/location';
-@import 'base/mixins/popular_card';
-@import 'base/mixins/order_mixins';
-@import 'base/mixins/impress-items';
-@import 'base/mixins/popular_route-items';
-@import 'base/mixins/faq_plus';
+@import './base/fonts/fonts';
+@import './base/variables/options';
+@import './base/variables/colors';
+@import './base/mixins/location';
+@import './base/mixins/popular_card';
+@import './base/mixins/order_mixins';
+@import './base/mixins/impress-items';
+@import './base/mixins/popular_route-items';
+@import './base/mixins/faq_plus';
 
 
 //Blocks
-@import 'blocks/container/container';
-@import 'blocks/navigation/nav';
-@import 'blocks/header/header';
-@import 'blocks/button/button';
-@import 'blocks/city/city';
-@import 'blocks/popular_yacht/popular';
-@import 'blocks/order/order';
-@import 'blocks/additional/additional';
-@import 'blocks/impressions/impressions';
-@import 'blocks/popular_route/popular_route';
-@import 'blocks/faq/faq';
-@import 'blocks/footer/footer';
-@import 'blocks/navigation/menu_button';
-@import 'blocks/modal/modal';
-@import 'blocks/filters/filters';
-@import 'blocks/divider/divider';
-@import 'blocks/direction/direction';
+@import './blocks/container/container';
+@import './blocks/navigation/nav';
+// @import './blocks/navigation/nav_menu';
+@import './blocks/header/header';
+@import './blocks/button/button';
+@import './blocks/city/city';
+@import './blocks/popular_yacht/popular';
+@import './blocks/order/order';
+@import './blocks/additional/additional';
+@import './blocks/impressions/impressions';
+@import './blocks/popular_route/popular_route';
+@import './blocks/faq/faq';
+@import './blocks/footer/footer';
+@import './blocks/navigation/menu_button';
+@import './blocks/modal/modal';
+@import './blocks/filters/filters';
+@import './blocks/divider/divider';
+@import './blocks/direction/direction';
 
 
 // @media breakepoints

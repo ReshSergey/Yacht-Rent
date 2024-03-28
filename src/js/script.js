@@ -4,13 +4,56 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Navigation Menu Button
 
-    const menuBtn = document.querySelector('.nav__menu-button'),
+    const nav = document.querySelector('.nav'),
+          menuBtn = document.querySelector('.nav__menu-button'),
           menuList = document.querySelector('.nav__list'),
-          menuSocial = document.querySelector('.nav__social');
+          menuSocial = document.querySelector('.nav__social'),
+          menuToggle = document.querySelectorAll('.nav-menu-btn');
     
-    menuBtn.addEventListener('click', ()=> {
+    const menuButton = document.createElement('div');
 
-    })
+    menuButton.innerHTML = `
+        <button class="button button_color" data-book>Оставить заявку</button>
+    `;
+
+//nav-menu-btn
+    function showMenu() {
+            menuBtn.style.cssText = `top: 40px`;
+            nav.classList.add('nav-menu-active');
+            nav.style.cssText = `
+                flex-direction: column;
+                padding: 0;
+                padding-top: 56px;
+                padding-bottom: 45px;
+                height: 100svh;
+            `;
+            menuList.style.cssText = `
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+                margin-top: 50px;
+            `;
+            menuList.append(menuButton);
+            menuSocial.style.display = 'flex';
+    }
+
+    function hideMenu() {
+            menuBtn.style.cssText = ``;
+            nav.classList.remove('nav-menu-active');
+            nav.style.cssText = ``;
+            menuList.style.cssText = ``;
+            menuButton.remove();
+            menuSocial.style.display = '';
+    }
+
+    menuBtn.addEventListener('click', ()=> {
+        if (nav.classList.contains('nav-menu-active')) {
+            hideMenu();
+        } else {
+            showMenu();
+        }
+    });
+
 
     //HEADER
     //смена background img в зависимости от времени
@@ -64,8 +107,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     showModal();
 
-
-    //direction data-link="cremea" data-link="sochi"
 
     const city = document.querySelectorAll('.direction__city'),
           port = document.querySelectorAll('.direction__select__port__container');
